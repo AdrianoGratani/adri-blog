@@ -1,16 +1,15 @@
-import First from '@/app/components/First';
+import Link from "next/link"
 
-import "@/app/globals.css";
 
 export default function Home() {
 
-  return (
-    <div>
-        <br/>
-
-        <First />
-      
-
-    </div>
-  );
+    return (
+        <div>
+        welcome here home page
+        
+        <Link href="/blog">goto Blog</Link>
+        <Link href="/about">go to About</Link>
+        <Link href="/products">got to prods</Link>
+        </div>
+    )
 }
