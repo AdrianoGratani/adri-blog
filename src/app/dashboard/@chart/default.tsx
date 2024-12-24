@@ -1,6 +1,6 @@
 import ParallelCard from "@/components/ParallelCard";
 
-export default function Chart() {
+export default function DefaultChart() {
 
   return (
     <>
