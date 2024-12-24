@@ -213,3 +213,29 @@ the parent (observe 'template' kkey):
 
 
 // 19. navigation    UI   <Link />
+
+//24.  this is the processing components hierarchy  
+>>>>    from layout to page.tsx through Suspense and ErrorBoundaries
+
+
+first check the general ui for route / root
+check for templates for dom refreshing data
+check if something is wrong, if true display the relative error.tsx page
+if fetching ddata, wrap the loading page within REactsuspense boundaries to reassure client about responsiveness, using loading.tsx
+check again if somehting is not found or the url is wrong, if true, display the not-found page.
+Finally, if the error is solved, the loading is finished, the not found is false, display the specific ui from page.tsx
+
+<Layout>
+ <Template>
+  <ErrorBoundary fallback={<Error/>}>
+   <Suspense fallback={<Loading />}>
+    <ErrorBoundary fallback={<NotFound/>}>
+      <Page />
+    </ErrorBoundary>
+   </Suspense>
+  </ErrorBoundary>
+ </Template>
+</Layout>
+
+
+
