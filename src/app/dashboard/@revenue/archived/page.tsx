@@ -7,7 +7,7 @@ export default function ArchivedRevenue() {
     <div>
       <ParallelCard>
         Archived Revenue Page
-        <Link href="/dashboard/revenue">Revenue default page</Link>
+        <Link href="/dashboard">Revenue default page</Link>
       </ParallelCard>
     </div>
   )
