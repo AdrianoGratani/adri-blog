@@ -1,8 +1,12 @@
-export default function Char() {
+import ParallelCard from "@/components/ParallelCard";
+
+export default function Chart() {
 
   return (
     <>
-      Chart: parallel page
+      <ParallelCard>
+        Chart: parallel page
+      </ParallelCard>
     </>
   )
 }
