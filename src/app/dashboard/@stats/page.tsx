@@ -1,8 +1,12 @@
+import ParallelCard from "@components/ParallelCard":
+
 export default function Stats() {
 
   return (
     <>
-      Chart: parallel routing.
+      <ParallelCard>
+        Chart: parallel routing.
+      </ParallelCard>
     </>
   )
 }
