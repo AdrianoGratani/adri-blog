@@ -8,7 +8,7 @@ export default function Revenue() {
     <>
       <ParallelCard>
         Revenue parallel route 
-        <Link href="/dashboard/revenue/archived">
+        <Link href="/dashboard/archived">
         <<<<archive>>>>>
         </Link>
         
