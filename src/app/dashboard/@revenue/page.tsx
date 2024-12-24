@@ -1,6 +1,12 @@
+import ParallelCard from "@/components/ParallelCard";
+
 export default function Revenue() {
 
   return (
-    <>Revenue parallel route </>
+    <>
+      <ParallelCard>
+        Revenue parallel route 
+      </ParallelCard>
+    </>
   )
 }
