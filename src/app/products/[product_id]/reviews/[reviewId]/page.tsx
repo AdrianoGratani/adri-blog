@@ -1,3 +1,6 @@
+"use client";   // to use the reset prop and trigger a state you mst switch from server to client.
+// press the try again until rr() gets 0
+
 import { notFound } from "next/navigation"
 function rr(n: number) return Math.floor(Math.random() * n); // let's trigger an error to display ./error.tsx route
 
