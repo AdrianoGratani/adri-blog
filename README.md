@@ -247,3 +247,11 @@ errortsx will cater to errors for all its nested child elements.
 error boundaries is nested INSIDE  a layout!!1
 
 // 28 parallel routes  @       slots = modular pages as prop to layout.tsx
+
+// 29 unmatched routes  /@slot/default.tsx     within parallel routes
+refresh the page, you get error because ech @route needs fallback values through the default.tsx file
+/revenue has one more layer /archived you go in and url is updated. ui for other @/route is still there.
+however, on refresh, next js needs default data for the other routes.
+
+// conditional routes     ? : 
+
