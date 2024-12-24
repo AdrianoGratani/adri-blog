@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+function rr(n: number) return Math.floor(Math.random() * n); // let's trigger an error to display ./error.tsx route
 
 export default function ReviewDetailID(
     {params} : {params: {
@@ -6,12 +7,12 @@ export default function ReviewDetailID(
         reviewId: string,
     }}
 ) {
+    if(parseInt(params.reviewId)> 1000) { notFound(); } // custom not found page after 1000th product parse
+    // npm run build  && npm run start to see the server logs about the error.
 
-    // custom not found page 
-    if(parseInt(params.reviewId)> 1000) {
-        notFound();
-    }
- 
+    
+    const r= rr(2);  if(r===1) throw new Error('there is an error in this page!!! so the page displayed is error.tsx.'); // introuce the error randomly
+    
     return(
         <div>
             review details for the product
