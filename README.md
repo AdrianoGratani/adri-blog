@@ -225,6 +225,8 @@ if fetching ddata, wrap the loading page within REactsuspense boundaries to reas
 check again if somehting is not found or the url is wrong, if true, display the not-found page.
 Finally, if the error is solved, the loading is finished, the not found is false, display the specific ui from page.tsx
 
+position of error.tsx playe a CRUCIAL error at determining scope for error boundaries and error handling
+
 <Layout>
  <Template>
   <ErrorBoundary fallback={<Error/>}>
@@ -237,5 +239,11 @@ Finally, if the error is solved, the loading is finished, the not found is false
  </Template>
 </Layout>
 
+"errors bubble up to the closest parent error boundary" significa che se si verifica un errore in un componente figlio, questo errore non viene "gestito" dal componente stesso. Invece, "risale" la gerarchia dei componenti finché non trova un Error Boundary, cioè un componente che è stato creato appositamente per catturare e gestire errori.
+errortsx will cater to errors for all its nested child elements.
 
 
+// 27. error  for layouts ====  put the error in the parent route of a layout to wrap the layout
+error boundaries is nested INSIDE  a layout!!1
+
+// 28 parallel routes  @       slots = modular pages as prop to layout.tsx
