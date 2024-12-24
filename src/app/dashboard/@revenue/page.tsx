@@ -1,4 +1,6 @@
 import ParallelCard from "@/components/ParallelCard";
+import Link from "next/navigation";
+
 
 export default function Revenue() {
 
@@ -6,6 +8,10 @@ export default function Revenue() {
     <>
       <ParallelCard>
         Revenue parallel route 
+        <Link href="/dashboard/archived">
+        <<<<archive>>>>>
+        </Link>
+        
       </ParallelCard>
     </>
   )
