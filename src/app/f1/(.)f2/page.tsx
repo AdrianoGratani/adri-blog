@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function F2() {
+export default function InterceptedF2() {
 
   return (
     <div>
