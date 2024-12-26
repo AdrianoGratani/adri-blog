@@ -1,15 +1,18 @@
 // it wraps parallel routes. each parallel routes is wrapped in ParallelCard component.
 // btw children is just ./page.tsx
 export default function LayoutParallel(
-  {children, chart, revenue, stats} : {
+  {children, chart, revenue, stats, login} : {
     children: React.ReactNode;
     chart: React.ReactNode;
     revenue: React.ReactNode;
     stats: React.ReactNode;
+    login: React.ReactNode;
   }
 ) 
 {
-  return (
+
+  let loggedIn = true;
+  return loggedIn ? (
     <div>
       <div>{children}</div>
       
@@ -24,5 +27,7 @@ export default function LayoutParallel(
           <div style={{display: 'flex', flex: 1}}>{stats}</div>
       </div>
     </div>
+  ) : (
+    login
   )
 }
