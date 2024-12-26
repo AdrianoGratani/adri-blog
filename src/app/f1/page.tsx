@@ -4,8 +4,8 @@ export default function F1() {
 
   return(
     <div>
-      this is folder at level one.
-      <Link href="/f1/f2">Go to folder at level two</Link>
+      this is folder at level four.
+      <Link href="">Click to go to intercepted route for page folder three</Link>
     </div>
   )
   
