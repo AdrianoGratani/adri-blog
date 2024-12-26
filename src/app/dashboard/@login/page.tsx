@@ -1,9 +1,12 @@
+import ParallelCard from "@/components/ParallelCard";
+
 
 export default function Login() {
-
   return (
     <div>
-      This is the login page.
+      <ParallelCard>
+        This is the login page.
+      </ParallelCard>
     </div>
   )
 }
